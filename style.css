@@ -1,0 +1,75 @@
+/* ===================================================
+   PALETA DE CORES ESCOLHIDA PELA DUPLA:
+   1ª Cor (Fundo / Principal): Azul Escuro (#0e1329)
+   2ª Cor (Combinação / Destaque): Amarelo Pac-Man (#f1c40f)
+=================================================== */
+
+/* Estilos Gerais do Corpo da Página */
+body {
+    background-color: #0e1329; /* Requisito CSS: background-color */
+    color: #ffffff;            /* Requisito CSS: color */
+    font-family: Arial, sans-serif;
+    margin: 0;                  /* Requisito CSS: margin */
+    padding: 20px;              /* Requisito CSS: padding */
+    text-align: center;         /* Requisito CSS: text-align (Centraliza o texto) */
+}
+
+/* Identificação da Dupla */
+.dupla {
+    color: #f1c40f;
+    font-size: 14px;            /* Requisito CSS: font-size */
+    margin-bottom: 5px;
+}
+
+/* Título Principal */
+h1 {
+    color: #f1c40f;             /* Requisito CSS: color */
+    font-size: 32px;            /* Requisito CSS: font-size */
+    margin-top: 0;
+}
+
+/* Container do Cartão Principal (Elemento Centralizado) */
+.card {
+    background-color: #1a2244;  /* Requisito CSS: background-color */
+    border-radius: 16px;        /* Requisito CSS: border-radius (Cantos arredondados) */
+    padding: 25px;              /* Requisito CSS: padding (Espaçamento interno) */
+    margin: 30px auto;          /* Requisito CSS: margin (Espaçamento externo + centralização) */
+    max-width: 480px;           /* Limita a largura do cartão */
+}
+
+/* Imagem */
+.imagem-jogo {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;         /* Requisito CSS: border-radius */
+    margin-bottom: 15px;        /* Requisito CSS: margin */
+}
+
+/* Texto Explicativo */
+.descricao {
+    font-size: 15px;            /* Requisito CSS: font-size */
+    line-height: 1.6;
+    padding: 0 10px;            /* Requisito CSS: padding */
+    text-align: justify;        /* Requisito CSS: text-align */
+}
+
+/* Botão Estilizado */
+.botao {
+    display: inline-block;
+    background-color: #f1c40f;  /* Cor que combina com a principal */
+    color: #0e1329;
+    font-size: 16px;            /* Requisito CSS: font-size */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 24px;         /* Requisito CSS: padding */
+    margin-top: 15px;           /* Requisito CSS: margin */
+    border-radius: 25px;        /* Requisito CSS: border-radius */
+    transition: all 0.3s ease;  /* Suaviza o efeito do hover */
+}
+
+/* Efeito :hover exigido na atividade */
+.botao:hover {
+    background-color: #ffffff;  /* Altera a cor de fundo no hover */
+    color: #0e1329;             /* Altera a cor do texto no hover */
+    transform: scale(1.05);     /* Aumenta levemente o botão */
+}
