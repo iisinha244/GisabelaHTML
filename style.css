@@ -1,75 +1,87 @@
 /* ===================================================
-   PALETA DE CORES ESCOLHIDA PELA DUPLA:
-   1ª Cor (Fundo / Principal): Azul Escuro (#0e1329)
-   2ª Cor (Combinação / Destaque): Amarelo Pac-Man (#f1c40f)
+   PALETA DE CORES:
+   Fundo Temático: Azul Escuro Neon (#0d0814) + Grade Rosa
+   Destaques: Rosa Neon (#ff2a85) e Amarelo (#ffea00)
 =================================================== */
 
-/* Estilos Gerais do Corpo da Página */
+/* Fundo caracterizado com efeito de grade e iluminação retro */
 body {
-    background-color: #0e1329; /* Requisito CSS: background-color */
-    color: #ffffff;            /* Requisito CSS: color */
+    background-color: #0d0814;
+    /* Padrão de grade neon rosa no fundo */
+    background-image: 
+        linear-gradient(rgba(255, 42, 133, 0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 42, 133, 0.15) 1px, transparent 1px);
+    background-size: 30px 30px;
+    color: #ffffff;
     font-family: Arial, sans-serif;
-    margin: 0;                  /* Requisito CSS: margin */
-    padding: 20px;              /* Requisito CSS: padding */
-    text-align: center;         /* Requisito CSS: text-align (Centraliza o texto) */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Identificação da Dupla */
 .dupla {
-    color: #240eec;
-    font-size: 14px;            /* Requisito CSS: font-size */
+    color: #ffea00;
+    font-size: 15px;
+    font-weight: bold;
     margin-bottom: 5px;
 }
 
 /* Título Principal */
 h1 {
-    color: #f1c40f;             /* Requisito CSS: color */
-    font-size: 32px;            /* Requisito CSS: font-size */
+    color: #ff2a85;
+    font-size: 34px;
+    text-shadow: 0 0 10px #ff2a85; /* Efeito de brilho neon */
     margin-top: 0;
 }
 
-/* Container do Cartão Principal (Elemento Centralizado) */
+/* Cartão Centralizado com cantos arredondados */
 .card {
-    background-color: #1a2244;  /* Requisito CSS: background-color */
-    border-radius: 16px;        /* Requisito CSS: border-radius (Cantos arredondados) */
-    padding: 25px;              /* Requisito CSS: padding (Espaçamento interno) */
-    margin: 30px auto;          /* Requisito CSS: margin (Espaçamento externo + centralização) */
-    max-width: 480px;           /* Limita a largura do cartão */
+    background-color: rgba(23, 13, 38, 0.95);
+    border: 2px solid #ff2a85;    /* Borda rosa neon */
+    border-radius: 20px;          /* Cantos arredondados */
+    box-shadow: 0 0 20px rgba(255, 42, 133, 0.4);
+    padding: 25px;                /* Espaçamento interno */
+    margin: 30px auto;            /* Espaçamento externo e centralização */
+    max-width: 480px;
 }
 
-/* Imagem */
+/* Estilo da Imagem */
 .imagem-jogo {
-    width: 80%;
+    width: 100%;
     height: auto;
-    border-radius: 8px;         /* Requisito CSS: border-radius */
-    margin-bottom: 15px;        /* Requisito CSS: margin */
+    border-radius: 12px;          /* Cantos arredondados */
+    margin-bottom: 15px;
+    border: 1px solid #ff2a85;
 }
 
 /* Texto Explicativo */
 .descricao {
-    font-size: 15px;            /* Requisito CSS: font-size */
+    font-size: 15px;
     line-height: 1.6;
-    padding: 0 10px;            /* Requisito CSS: padding */
-    text-align: justify;        /* Requisito CSS: text-align */
+    padding: 0 10px;
+    text-align: justify;
 }
 
-/* Botão Estilizado */
+/* Botão Principal */
 .botao {
     display: inline-block;
-    background-color: #f1c40f;  /* Cor que combina com a principal */
-    color: #0e1329;
-    font-size: 16px;            /* Requisito CSS: font-size */
+    background-color: #ff2a85;
+    color: #ffffff;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    padding: 12px 24px;         /* Requisito CSS: padding */
-    margin-top: 15px;           /* Requisito CSS: margin */
-    border-radius: 25px;        /* Requisito CSS: border-radius */
-    transition: all 0.3s ease;  /* Suaviza o efeito do hover */
+    padding: 12px 28px;
+    margin-top: 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 42, 133, 0.5);
 }
 
-/* Efeito :hover exigido na atividade */
+/* Efeito :hover no botão */
 .botao:hover {
-    background-color: #ffffff;  /* Altera a cor de fundo no hover */
-    color: #0e1329;             /* Altera a cor do texto no hover */
-    transform: scale(1.05);     /* Aumenta levemente o botão */
+    background-color: #ffea00;   /* Muda para amarelo ao passar o mouse */
+    color: #0d0814;
+    box-shadow: 0 0 15px #ffea00;
+    transform: scale(1.05);      /* Aumenta o tamanho levemente */
 }
